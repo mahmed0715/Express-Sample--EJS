@@ -1,0 +1,7 @@
+
+- <%=data.name%> Features
+<ul>
+<% for(var key in data.properties){%>
+    <li><%=key%> <% if(typeof data.properties[key] != 'boolean'){%><%=data.properties[key]%><%}%></li>
+<%}%>
+</ul>
